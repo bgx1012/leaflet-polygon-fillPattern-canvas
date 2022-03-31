@@ -22,4 +22,4 @@ var poly1 = [
 L.polygon(poly1, { imgId: "lamp" }).addTo(map);
 ```
 
-![geojson](./examples/geo.jpg)
+![geojson](./example/geo.jpg)
