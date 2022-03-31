@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../leaflet-polygon.fillPattern-canvas.js"></script>
+    <style type="text/css">
+        html, body { height:100%; margin:0; overflow: hidden;}
+        #map {
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <img id="lamp" style="display:none;" src="./fill.gif">
+    <script>
+        var map = L.map('map',{
+          preferCanvas: true
+        }).setView([23.7, 121], 8);
+        // L.tileLayer('http://gdtn.shipxy.com/vt?lyrs=m@180000000&hl=zh-CN&gl=cn&src=app&x={x}&y={y}&z={z}&s=Gal', {
+        // }).addTo(map);
+
+        var poly1 = [
+            [24, 121],
+            [24.5, 121],
+            [25.5, 121],
+            [25.5, 124],
+            [24.5, 121.9],
+            [24, 121.9]
+        ];
+        L.polygon(poly1, {imgId:'lamp'}).addTo(map);
+
+        var poly2 = [
+            [24, 120],
+            [23.5, 120],
+            [23.5, 120.9],
+            [24, 120.9]
+        ];
+        L.polygon(poly2, {}).addTo(map);
+
+    </script>
+</body>
