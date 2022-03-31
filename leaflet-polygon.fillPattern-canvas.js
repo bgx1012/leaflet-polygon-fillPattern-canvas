@@ -1,8 +1,7 @@
 /**
- *  Extend the Polygon Object to set an image to fill the path in SVG
- *  exp:
- *    L.Polygon(points, {fill: 'url(image.gif)'});
- *  Author: lanwei@cloudybay.com.tw
+ *  Extend the Polygon Object to set an image to fill the path in canvas
+
+ *  Author: bgx1012@163.com
  */
 
 (function (window, document, undefined) {
