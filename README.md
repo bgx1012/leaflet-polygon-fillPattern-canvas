@@ -7,6 +7,9 @@ Can improve the rendering performance of big data.
 ### Usage example
 
 ```javascript
+//<div id="map"></div>
+//<img id="lamp" style="display:none;" src="./fill.gif">
+
 var map = L.map("map", {
   preferCanvas: true,
 }).setView([23.7, 121], 8);
